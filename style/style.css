@@ -303,6 +303,49 @@ INDEX HTML STYLE SHEET */
   animation: jello-horizontal 0.9s both;
 }
 
+/* toggle div on hover */
+.description1 {
+  display: none;
+  color: #303030;
+  border: 2px solid red;
+  position: relative;
+  right: -300px;
+  top: -40px;
+  width: 500px;
+}
+
+.hb-1:hover .description1 {
+  display: block;
+}
+
+.description2 {
+  display: none;
+  color: #303030;
+  border: 2px solid red;
+  position: relative;
+  right: -300px;
+  top: -40px;
+  width: 500px;
+}
+
+.hb-2:hover .description2 {
+  display: block;
+}
+
+.description3 {
+  display: none;
+  color: #303030;
+  border: 2px solid red;
+  position: relative;
+  right: -300px;
+  top: -40px;
+  width: 500px;
+}
+
+.hb-3:hover .description3 {
+  display: block;
+}
+
 /* INDEX TOOLS */
 .tools {
   min-width: 980px;
@@ -325,14 +368,21 @@ INDEX HTML STYLE SHEET */
   padding: 10px;
   box-shadow: 4px 0 10px #222;
   width: 250px;
-  height: 150px;
+  height: 350px;
   text-align: center;
   font-size: 20px;
+  margin-bottom: 50px;
 }
 
-.tools-3:hover {
+.tools h4 {
+  margin: 30px 0 60px 0;
+  font-size: 25px;
+  font-weight: 600;
+  letter-spacing: -1px;
+  text-shadow: 5px 0 10px #888;
 }
 
+/* background images index */
 #learn-image {
   margin: 50px 0 -655px 350px;
   opacity: 8%;
