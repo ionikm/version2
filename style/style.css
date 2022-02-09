@@ -239,12 +239,10 @@ INDEX HTML STYLE SHEET */
 
 .hbox-2 a {
   font-size: 32px;
-  font-weight: 500;
-  letter-spacing: 0.5px;
+  font-weight: 600;
+  letter-spacing: -1px;
   text-align: center;
   text-decoration: none;
-  color: #303030;
-  background-color: #f4f4f4;
   grid-column: span 4;
 }
 
@@ -255,63 +253,66 @@ INDEX HTML STYLE SHEET */
 .hb-1 {
   height: 50px;
   width: 200px;
-  border: 5px solid #a81d14;
   border-radius: 10px;
   box-shadow: 5px 0 10px #303030;
+  background-color: #cf2f24;
+  color: #ededed;
 }
 .hb-1:hover {
-  background-color: #a81d14;
-  border: 2px solid #303030;
+  background-color: #cf2f24;
   color: #ededed;
-  box-shadow: 0 5px 10px #303030;
+  box-shadow: 0 10px 20px #303030;
   font-weight: 700;
-  -webkit-animation: jello-horizontal 0.9s both;
-  animation: jello-horizontal 0.9s both;
 }
 
 .hb-2 {
   height: 50px;
   width: 200px;
-  border: 5px solid #1c61a6;
+  background-color: #1c61a6;
+  color: #ededed;
   border-radius: 10px;
   box-shadow: 5px 0 10px #303030;
 }
 .hb-2:hover {
   background-color: #1c61a6;
-  border: 2px solid #303030;
+  border: 3px solid #303030;
   color: #ededed;
-  box-shadow: 0 5px 10px #303030;
+  box-shadow: 0 10px 20px #303030;
   font-weight: 700;
-  -webkit-animation: jello-horizontal 0.9s both;
-  animation: jello-horizontal 0.9s both;
 }
 
 .hb-3 {
   height: 50px;
   width: 200px;
-  border: 5px solid #e7f56c;
+  background-color: #e7f56c;
+  color: #303030;
   border-radius: 10px;
   box-shadow: 5px 0 10px #303030;
 }
 .hb-3:hover {
   background-color: #e7f56c;
-  border: 2px solid #303030;
+  border: 3px solid #303030;
   color: #303030;
-  box-shadow: 0 5px 10px #303030;
+  box-shadow: 0 10px 20px #303030;
   font-weight: 700;
-  -webkit-animation: jello-horizontal 0.9s both;
-  animation: jello-horizontal 0.9s both;
 }
 
 /* toggle div on hover */
 .description1 {
   display: none;
-  color: #303030;
-  border: 2px solid red;
+  color: #ededed;
+  background-color: #cf2f24;
   position: relative;
   right: -300px;
   top: -40px;
   width: 500px;
+  height: 185px;
+  padding: 30px;
+  box-shadow: 0 10px 20px #303030;
+  border-radius: 50px 15px;
+  -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .hb-1:hover .description1 {
@@ -320,12 +321,19 @@ INDEX HTML STYLE SHEET */
 
 .description2 {
   display: none;
-  color: #303030;
-  border: 2px solid red;
+  background-color: #1c61a6;
+  color: #ededed;
   position: relative;
   right: -300px;
-  top: -40px;
+  top: -110px;
   width: 500px;
+  height: 185px;
+  padding: 30px;
+  box-shadow: 0 10px 20px #303030;
+  border-radius: 50px 15px;
+  -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .hb-2:hover .description2 {
@@ -335,11 +343,18 @@ INDEX HTML STYLE SHEET */
 .description3 {
   display: none;
   color: #303030;
-  border: 2px solid red;
   position: relative;
   right: -300px;
-  top: -40px;
+  top: -180px;
   width: 500px;
+  height: 185px;
+  padding: 30px;
+  background-color: #e7f56c;
+  box-shadow: 0 10px 20px #303030;
+  border-radius: 50px 15px;
+  -webkit-animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94)
+    both;
+  animation: scale-in-hor-left 0.5s cubic-bezier(0.25, 0.46, 0.45, 0.94) both;
 }
 
 .hb-3:hover .description3 {
@@ -349,15 +364,19 @@ INDEX HTML STYLE SHEET */
 /* INDEX TOOLS */
 .tools {
   min-width: 980px;
-  margin: 50px 0 0 50px;
+  margin: 50px 0 100px 50px;
   padding: 20px;
   display: grid;
-  grid-template-columns: 250px 250px 250px;
+  grid-template-columns: 320px 320px 320px;
   gap: 15px 40px;
 }
 
 .tools h3 {
   grid-column: 1/4;
+  font-size: 40px;
+  color: #303030;
+  letter-spacing: -2px;
+  margin: 30px 0 20px 0;
 }
 
 .tools-1,
@@ -366,9 +385,9 @@ INDEX HTML STYLE SHEET */
   background-color: #ededed;
   border-radius: 10px;
   padding: 10px;
-  box-shadow: 4px 0 10px #222;
-  width: 250px;
-  height: 350px;
+  box-shadow: 0px 20px 20px #222;
+  width: 320px;
+  height: 700px;
   text-align: center;
   font-size: 20px;
   margin-bottom: 50px;
@@ -379,13 +398,43 @@ INDEX HTML STYLE SHEET */
   font-size: 25px;
   font-weight: 600;
   letter-spacing: -1px;
-  text-shadow: 5px 0 10px #888;
+  /* text-shadow: 5px 0 10px #888; */
 }
 
 /* background images index */
 #learn-image {
   margin: 50px 0 -655px 350px;
   opacity: 8%;
+}
+
+.tool-link {
+  color: #303030;
+  text-decoration: none;
+  display: block;
+  letter-spacing: -1px;
+  padding: 2px;
+  text-shadow: 3px 10px 10px #999;
+}
+
+.tool-link:hover {
+  text-shadow: 3px 10px 10px #999;
+  border-top: 2px solid #a81d14;
+  border-bottom: solid 2px #a81d14;
+  background-color: #303030;
+  color: #ededed;
+}
+
+/* Images in INDEX *png for tags */
+#open-body {
+  position: relative;
+  top: 20px;
+  left: 20px;
+}
+
+#closed-body {
+  position: relative;
+  bottom: -1550px;
+  right: 50px;
 }
 
 /* KEYFRAME ANIMATIONS */
@@ -407,68 +456,47 @@ INDEX HTML STYLE SHEET */
   }
 }
 
+/* ----------------------------------------------
+ * Generated by Animista on 2022-2-9 21:12:14
+ * Licensed under FreeBSD License.
+ * See http://animista.net/license for more info. 
+ * w: http://animista.net, t: @cssanimista
+ * ---------------------------------------------- */
+
 /**
  * ----------------------------------------
- * animation jello-horizontal
+ * animation scale-in-hor-left
  * ----------------------------------------
  */
-@-webkit-keyframes jello-horizontal {
+@-webkit-keyframes scale-in-hor-left {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
   }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
   }
 }
-@keyframes jello-horizontal {
+@keyframes scale-in-hor-left {
   0% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
-  }
-  30% {
-    -webkit-transform: scale3d(1.25, 0.75, 1);
-    transform: scale3d(1.25, 0.75, 1);
-  }
-  40% {
-    -webkit-transform: scale3d(0.75, 1.25, 1);
-    transform: scale3d(0.75, 1.25, 1);
-  }
-  50% {
-    -webkit-transform: scale3d(1.15, 0.85, 1);
-    transform: scale3d(1.15, 0.85, 1);
-  }
-  65% {
-    -webkit-transform: scale3d(0.95, 1.05, 1);
-    transform: scale3d(0.95, 1.05, 1);
-  }
-  75% {
-    -webkit-transform: scale3d(1.05, 0.95, 1);
-    transform: scale3d(1.05, 0.95, 1);
+    -webkit-transform: scaleX(0);
+    transform: scaleX(0);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
   }
   100% {
-    -webkit-transform: scale3d(1, 1, 1);
-    transform: scale3d(1, 1, 1);
+    -webkit-transform: scaleX(1);
+    transform: scaleX(1);
+    -webkit-transform-origin: 0% 0%;
+    transform-origin: 0% 0%;
+    opacity: 1;
   }
 }
