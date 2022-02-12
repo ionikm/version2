@@ -437,6 +437,68 @@ INDEX HTML STYLE SHEET */
   right: 50px;
 }
 
+/* INTRODUCTION CSS
+XX
+CSS INTRO */
+.introcss-main {
+  min-width: 1280px;
+  height: 1500px;
+  display: flex;
+}
+
+.i-css {
+  height: 1500px;
+  min-width: 640px;
+  width: 50%;
+  padding-bottom: 180px;
+  background-color: #ededed;
+  flex: 0 1 auto;
+}
+
+.css-boxes {
+  height: 1500px;
+  min-width: 640px;
+  width: 50%;
+  padding-bottom: 180px;
+  background-color: #ededed;
+  flex: 0 1 auto;
+}
+
+#ih3css {
+  font-size: 39px;
+  letter-spacing: -1px;
+  color: #303030;
+  padding-top: 50px;
+  padding-bottom: 20px;
+  text-align: center;
+}
+
+.p-icss {
+  padding-left: 50px;
+  padding-top: 20px;
+  margin-right: 40px;
+  line-height: 20px;
+  letter-spacing: -0.5px;
+}
+
+.intro-box1,
+.intro-box2,
+.intro-box3,
+.intro-box4 {
+  width: 70%;
+  height: 20%;
+  background-color: #303030;
+  border-radius: 50px 25px;
+  margin: 50px auto;
+  color: #ededed;
+}
+
+.p-iccsimg {
+  width: 90%;
+  padding-left: 50px;
+  padding-top: 20px;
+}
+
 /* KEYFRAME ANIMATIONS */
 @keyframes blink {
   from {
